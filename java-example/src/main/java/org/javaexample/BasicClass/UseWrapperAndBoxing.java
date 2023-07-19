@@ -4,7 +4,17 @@ import java.util.ArrayList;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Random;
+/*
 
+```java
+Integer num = null;
+int unboxedNum = num; // NullPointerException 발생
+```
+래퍼 클래스의 객체가 null일 경우, 오토 언박싱 과정에서 NullPointerException이 발생할 수 있음
+위의 코드에서 Integer 객체 num이 null이지만, 오토 언박싱 과정에서 int형 변수 unboxedNum에 할당하려 하므로 NullPointerException이 발생.
+이를 피하려면 null 체크를 반드시 해줘야함
+
+ */
 public class UseWrapperAndBoxing {
     public static void main(String[] args) {
 //        Integer integer1 = new Integer(5);  // deprecated, 자바9부터 사용 권장하지 않음
