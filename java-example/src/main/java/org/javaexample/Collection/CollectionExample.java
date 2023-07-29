@@ -15,6 +15,5 @@ public class CollectionExample {
         Collection<Integer> collection = Arrays.asList(1, 2, 3);
         ArrayList<Integer> arrayList = new ArrayList<>(collection);
         System.out.println(arrayList);
-
     }
 }

@@ -17,6 +17,19 @@ int unboxedNum = num; // NullPointerException 발생
  */
 public class UseWrapperAndBoxing {
     public static void main(String[] args) {
+        String str = "12";
+        String str1 = "false";
+        String str2 = "true";
+
+        Boolean bool = Boolean.valueOf(str);
+        Boolean bool1 = Boolean.valueOf(str1);
+        Boolean bool2 = Boolean.valueOf(str2);
+
+        System.out.println(bool);
+        System.out.println(bool1);
+        System.out.println(bool2);
+
+
 //        Integer integer1 = new Integer(5);  // deprecated, 자바9부터 사용 권장하지 않음
         Integer integer1 = Integer.valueOf(5);
         Integer integer2 = Integer.valueOf("1012");  //문자열 기반 Integer 인스턴스
@@ -26,6 +39,11 @@ public class UseWrapperAndBoxing {
         System.out.println("integer2 = " + integer2);
         System.out.println("double2 = " + double2);
         System.out.println("double3 = " + double3);
+
+        boolean b = true;
+        Boolean aBoolean = Boolean.valueOf(b);
+        System.out.println(aBoolean.toString());
+
 
         int num1 = integer1.intValue();  //UnBoxing
         double num2 = double2.doubleValue();
@@ -78,3 +96,4 @@ class Wrapper {
         System.out.println(object);
     }
 }
+
