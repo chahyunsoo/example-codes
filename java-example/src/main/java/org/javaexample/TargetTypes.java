@@ -21,7 +21,9 @@ class A {
 
 public class TargetTypes {
     public static void main(String[] args) {
-        Box<Integer> ibox = A.<Integer>makeBox();
+//        Box<Integer> ibox = A.<Integer>makeBox();
+        Box<Integer> ibox = A. makeBox();  //생략 가능
+
         ibox.set(25);
         System.out.println(ibox.get());
     }
