@@ -32,7 +32,7 @@ public class ComparatorTreeMap {
         System.out.println();
 
         for (Iterator<Integer> itr = set.iterator(); itr.hasNext(); ) {
-            System.out.println("map.get(itr) = " + map.get(itr));  //오류, get() 메소드 안에는 키 값이 와야 함
+//            System.out.println("map.get(itr) = " + map.get(itr));  //오류, get() 메소드 안에는 키 값이 와야 함
             System.out.println("iterator "+map.get(itr.next()));
         }
         System.out.println();
