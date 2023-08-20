@@ -37,8 +37,12 @@ public class Weather {
                     System.out.print("평일 " + ", ");  break;
             }
         }
+        System.out.println();
 
         Week2[] arrayWeek2 = Week2.values();
+        for (Week2 a : arrayWeek2) {
+            System.out.println(a);
+        }
 
         for (Week2 w: arrayWeek2) {
             if (w == Week2.WED) {

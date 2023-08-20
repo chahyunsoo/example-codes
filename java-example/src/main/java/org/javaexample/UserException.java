@@ -5,8 +5,8 @@ import java.util.Scanner;
 class ReadAgeException extends Exception{
     String s;
     ReadAgeException(String s) {
-//        super("잘못된 나이 입력");
-        super(s);
+        super("잘못된 나이 입력");
+//        super(s);
     }
 }
 public class UserException {
